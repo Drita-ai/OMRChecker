@@ -544,5 +544,6 @@ def evaluate_concatenated_response(
     evaluation_config.conditionally_print_explanation()
     evaluation_config.conditionally_save_explanation_csv(evaluation_path)
     print(current_score)
+    print("hey")
 
     return current_score

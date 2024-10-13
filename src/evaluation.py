@@ -427,6 +427,7 @@ class EvaluationConfig:
                     f"Section '{section_key}' has overlapping question(s) with other sections"
                 )
             section_questions = section_questions.union(current_set)
+            print(section_questions)
 
         all_questions = set(self.questions_in_order)
         missing_questions = sorted(section_questions.difference(all_questions))
